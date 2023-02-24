@@ -2,12 +2,12 @@
 
 //Array con 6 possibilità dado
 
-diceValues = [1, 2, 3, 4, 5, 6];
+const diceValues = [1, 2, 3, 4, 5, 6];
 
 //Prendo 2 valori a caso 
 
-const user = diceValues [Math.random() * diceValues.lenght];
-const computer = diceValues [Math.random() * diceValues.lenght];
+const user = diceValues[Math.floor(Math.random() * diceValues.length)];
+const computer = diceValues[Math.floor(Math.random() * diceValues.length)];
 
 
 console.log("user=" + user)
